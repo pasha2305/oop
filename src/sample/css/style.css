@@ -1,0 +1,60 @@
+.table-view {
+    -fx-base: #3949AB;
+    -fx-control-inner-background: #3949AB;
+    -fx-background-color: #FAFAFA;
+    /*-fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;*/
+}
+
+/*.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color:
+            transparent
+            transparent
+            derive(-fx-base, 80%)
+            transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}*/
+
+/*.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #BDBDBD;
+}*/
+
+/*
+ * Push Button в стиле Metro
+ * Автор: Pedro Duque Vieira
+ * http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/
+ */
+.button {
+    -fx-background-color:  #3949AB;
+    -fx-border-color: #1A237E;
+}
+
+.button:hover {
+    -fx-background-color: #303F9F;
+    -fx-border-color: #1A237E;
+}
+
+/*.button:pressed {
+    -fx-background-color: #283593;
+    -fx-border-color: #1A237E
+}
+
+.button:focused {
+    -fx-background-color: #283593;
+    -fx-border-color: #1A237E;
+}*/

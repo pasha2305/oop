@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="970.0" style="-fx-background-color: #FAFAFA;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MainWindowController">
+   <children>
+      <VBox layoutY="100.0" prefHeight="600.0" prefWidth="270.0" style="-fx-background-color: #3949AB;" stylesheets="@../css/style.css">
+         <children>
+            <Button fx:id="usersBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#getPage" prefHeight="80.0" prefWidth="270.0" text="Пользователи" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../icons/identification-card.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="findBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#getPage" prefHeight="80.0" prefWidth="270.0" text="Книги" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../icons/magnifying-glass.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="orderBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#getPage" prefHeight="80.0" prefWidth="270.0" text="Заказ книг" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../icons/clipboard-text.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="reportBtn" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#getPage" prefHeight="80.0" prefWidth="270.0" text="Запрос отчета" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0">
+                     <image>
+                        <Image url="@../icons/file-text.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="anchorHolder" layoutX="270.0" layoutY="100.0" prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="643.0" layoutY="159.0">
+               <image>
+                  <Image url="@../icons/x.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane prefHeight="101.0" prefWidth="970.0" style="-fx-background-color: #1A237E;">
+         <children>
+            <Pane layoutX="8.0" prefHeight="100.0" prefWidth="274.0">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutY="10.0">
+                     <image>
+                        <Image url="@../icons/bookmarks.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="80.0" layoutY="32.0" text="Book library" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="29.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton fx:id="closeBtn" contentDisplay="GRAPHIC_ONLY" layoutX="908.0" onAction="#close" prefHeight="38.0" prefWidth="62.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0">
+                     <image>
+                        <Image url="@../icons/x.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

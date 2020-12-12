@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ООП_курсач:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/__jar</output-path>
+    <root id="archive" name="ООП_курсач.jar">
+      <element id="module-output" name="ООП_курсач" />
+      <element id="extracted-dir" path="$USER_HOME$/Documents/Библиотеки JAVA/jfoenix-9.0.10.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
