@@ -1,6 +1,8 @@
 package sample.controllers;
 
 import com.jfoenix.controls.JFXButton;
+
+import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -10,8 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
-import sample.models.BookList;
-import sample.models.UserList;
+import javafx.scene.layout.Background;
 
 
 public class MainWindowController {
@@ -51,8 +52,6 @@ public class MainWindowController {
     void initialize() throws IOException {
          selectAnchor = FXMLLoader.load(getClass().getResource("../fxml/usersPage.fxml")); 
          setNode(selectAnchor);
-         BookList.fillTestData();
-         UserList.fillTestData();
     }
 
     @FXML

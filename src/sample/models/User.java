@@ -1,8 +1,6 @@
 package sample.models;
 
 import javafx.beans.property.StringProperty;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
 import java.util.Objects;
 
@@ -12,7 +10,6 @@ public class User {
     private String middleName;
     private String phone;
     private Integer number;
-    private ObservableList<Book> books = FXCollections.observableArrayList();
 
     public User(String name, String soname, String middleName, String phone) {
         this.name = name;
@@ -44,10 +41,6 @@ public class User {
 
     public void setPhone(String phone) {
         this.phone = phone;
-    }
-
-    public ObservableList<Book> getBooks() {
-        return books;
     }
 
     @Override

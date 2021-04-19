@@ -3,8 +3,12 @@ package sample.controllers;
 import com.jfoenix.controls.JFXButton;
 
 import java.net.URL;
+import java.text.NumberFormat;
+import java.text.ParsePosition;
 import java.util.ResourceBundle;
+
 import com.jfoenix.controls.JFXTextField;
+import javafx.beans.property.StringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -72,6 +76,7 @@ public class usersController {
         middleColumn.setCellValueFactory(new PropertyValueFactory<User, String>("middleName"));
         phoneColumn.setCellValueFactory(new PropertyValueFactory<User, Integer>("phone"));
         numberColumn.setCellValueFactory(new PropertyValueFactory<User, Integer>("number"));
+        userList.fillTestData();
         usersTable.setItems(userList.getUserList());
     }
 
@@ -106,13 +111,14 @@ public class usersController {
     public boolean checkNumber() {
         if (phoneField.getText().length() == 10 && phoneField.getText().charAt(0) != '+') {
             try {
-                Long.parseLong(phoneField.getText());
+                Integer.parseInt(phoneField.getText());
                 return true;
             } catch (Exception e) {
                 setWarning("Ошибка при вводе номера!");
                 return false;
             }
         }  else if (phoneField.getText().length() == 12) {
+            System.out.println(phoneField.getText());
             if (phoneField.getText().charAt(0) == '+') {
                 String tmp;
                 tmp = phoneField.getText().substring(1);
